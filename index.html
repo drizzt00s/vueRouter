@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+
+<div id='app'>
+	<p>Hello App</p>
+	<div>
+		<a v-link="{path:'/home'}">Home</a>
+		<a v-link="{path:'/list'}">List</a>
+		<a v-link="{path:'/biz'}">biz</a>
+	</div>
+	<router-view></router-view>
+</div>
+
+
+<!-- <div id='app'>
+	<ul>
+		<li @click="currentView = 'home' ">Home</li>
+		<li @click="currentView = 'list' ">List</li>
+		<li @click="currentView = 'detail' ">Detail</li>
+	</ul>
+	<component v-bind:is='currentView'></component>
+</div> -->
+
+
+<!-- <div id='app'>
+	<my-slot>
+		<p slot='title'>{{title + '1'}}</p>
+		<p slot='title'>{{title + '2'}}</p>
+		<div slot='content'>{{content}}</div>
+	</my-slot>
+</div> -->
+
+<!-- <div id='app'>
+	<parent></parent>
+</div> -->
+
+
+<!-- 
+<div id='app'>
+	<my-slot>
+		<p slot='title'>{{title}}</p>
+		<div slot='content'>{{content}}</div>
+		<div slot='thrid'>{{childData}}</div>
+	</my-slot>
+</div> -->
+
+
+<!-- <div id='app'>
+<parent></parent>
+</div> -->
+
+<!-- <div id='app'>
+<button v-on:click='triggerCustomerEvent'>Click</button>
+{{todo}}
+</div> -->
+
+
+<!-- <div id='vuex'>
+	<Counter></Counter>
+</div> -->
+
+
+
+<!-- <div id='app'>
+	<input type='text' v-model='message' />
+	<span>Your input is:{{message}}</span>
+
+	<label><input type='radio' value='male' v-model='gender'>男</label>
+	<label><input type='radio' value='female' v-model='gender'>女</label>
+	{{gender}}
+
+	<label><input type='checkbox' value="1" v-model='multiChecked'>1</label>
+	<label><input type='checkbox' value="2" v-model='multiChecked'>2</label>
+	<label><input type='checkbox' value="3" v-model='multiChecked'>3</label>
+	<p>multiChecked:{{multiChecked.join('|')}}</p>
+
+	<select v-model='selected'>
+		<option>A</option>
+		<option selected>B</option>
+		<option>C</option>
+	</select>
+	<span>selected:{{selected}}</span>
+
+	<select v-model='multiSelected' multiple>
+		<option selected>A</option>
+		<option>B</option>
+		<option>C</option>
+		<option>D</option>
+	</select>
+
+	<p>multipleselected:{{multiSelected.join('|')}}</p>
+	<input v-model='query' lazy /><span>{{query}}</span>
+	<input v-model='age' number /><span>{{age}}</span> 
+	<input v-model='q' debounce='3000 '/><span>{{q}}</span>
+	<a v-bind:href='href'>163</a>
+
+	<p v-bind:class="[classA, classB]">some text here</p>
+	<p class='tab' v-bind:class="{'av1':ac, 'av2':!ac}">Some texts</p>
+
+	<div v-bind:style='myStyle'>Some words here</div>
+
+	<div v-if='isShow'>show here</div>
+	<div v-else>show there</div>
+
+	<div v-show='isShow'>show here2</div>
+	<div v-else>show there2</div>
+
+
+	<div v-if='yes'>
+		<div v-if='inner'>inner</div>
+		<div v-else>not inner</div>
+	</div>
+
+	<ul v-for='item in items'>
+		<li><span>{{$index}}</span><div>{{item.title}}</div><div>{{item.description}}</div></li>
+	</ul>
+
+	<div v-for="(key, value) in objItems">
+		<div>{{$key}}:{{key}}:{{value}}</div>
+	</div>
+
+	<div v-for='x in 3'>
+		{{x}}
+	</div>
+
+	<template v-if='temYes'>
+		<p>123</p>
+		<p>456</p>
+	</template>
+
+	<div v-for='temItem in temItems'>
+		<div>{{temItem.name}}</div>
+		<div>{{temItem.des}}</div>
+	</div>
+
+	<button v-on:click='say'>Say</button>
+	<button v-on:click="sayFrom('fucked')">FF</button>
+	<button v-on:click="showEvent($event)">show event target</button>
+	<button v-on:click="showEvent2">show event target</button>
+</div> -->
+
+
+
+
+
+<script src="bundle.js"></script>
+</body>
+</html>
